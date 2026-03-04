@@ -1,0 +1,88 @@
+.main {
+  width: 327px;
+  height: 611px;
+  background-color: var(--grey-800);
+
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  gap: 24px;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  gap: 24px;
+}
+
+.main-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+}
+
+.image {
+  width: 88px;
+  height: 88px;
+}
+
+.links-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.list-item {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: var(--grey-700);
+
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 250ms ease-in-out;
+}
+
+.list-item:hover,
+.list-item:focus {
+  background-color: var(--green);
+}
+
+.list-item:hover .links,
+.list-item:focus .links {
+  color: var(--grey-900);
+}
+
+.links {
+  text-align: center;
+  color: var(--white);
+  padding: 12px;
+  width: 100%;
+  height: 45px;
+  transition: color 250ms ease-in-out;
+}
+
+.location {
+  color: var(--green);
+}
+
+
+/* Tablet */
+
+@media screen and (min-width: 768px) {
+  .main {
+    padding: 40px;
+    width: 384px;
+  }
+}
